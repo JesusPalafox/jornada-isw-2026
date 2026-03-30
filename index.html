@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jornada ISW 2026</title>
+</head>
+<body>
+
+<header>
+    <img src="img/ues-logo.png" alt="Logo UES" width="100">
+    <h1>Jornada de Ingeniero en Software 2026</h1>
+    <p><time datetime="2026-04-27">Lunes 27 de abril de 2026</time></p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a> |
+    <a href="programa.html">Programa</a> |
+    <a href="#registro">Registro</a>
+</nav>
+
+<main>
+
+<h2>Agenda rápida</h2>
+<ul>
+    <li>11:00 - Conferencia 1</li>
+    <li>12:00 - Conferencia 2</li>
+    <li>13:00 - Reconocimientos</li>
+    <li>13:30 - Conferencia 3</li>
+    <li>14:30 - Evento cultural</li>
+</ul>
+
+<section id="registro">
+    <h2>Registro</h2>
+
+    <form>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="correo">Correo UES:</label><br>
+        <input type="email" id="correo"
+        pattern="23020220102@ues.mx"
+        required><br><br>
+
+        <label for="tipo">Tipo de asistencia:</label><br>
+        <select id="tipo" required>
+            <option value="">Selecciona</option>
+            <option>Alumno (Ing. en Software)</option>
+            <option>Docente (Ing. en Software)</option>
+        </select><br><br>
+
+        <p>Evento principal:</p>
+        <input type="radio" name="evento" id="conf" required>
+        <label for="conf">Conferencias</label><br>
+
+        <input type="radio" name="evento" id="cultural">
+        <label for="cultural">Evento cultural</label><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>2026 Jornada ISW</p>
+</footer>
+
+</body>
+</html>
